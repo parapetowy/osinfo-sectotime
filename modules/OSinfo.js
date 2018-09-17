@@ -1,5 +1,5 @@
 var os = require('os');
-var secToTime = require('../modules/secTotime');
+var secToTime = require('../modules/secToTime');
 
 function getOSinfo() {
     var type = os.type();
@@ -20,4 +20,4 @@ function getOSinfo() {
     console.log('Home dir:', userInfo.homedir);
 }
 
-exports.print = getOSinfo;
+exports.getOSinfo = getOSinfo;
